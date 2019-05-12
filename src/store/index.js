@@ -3,7 +3,7 @@ import Vuex from 'vuex'
 import state from "@/store/root.state"
 import actions from "@/store/root.action"
 import mutations from "@/store/root.mutations"
-import modules from "@/store/modules"
+import modules from "@/store/modules/index"
 
 Vue.use(Vuex)
 

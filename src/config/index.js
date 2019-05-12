@@ -1,1 +1,1 @@
-export const SERVER = "http://www.baidu.com"
+export const SERVER = ""

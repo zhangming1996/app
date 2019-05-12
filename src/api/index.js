@@ -35,7 +35,7 @@ const fetch = (opts, data) => {
     url: opts.url,
     timeout: 10000,
     params: data,
-    data: qs.stringify(data),
+    data: Qs.stringify(data),
     headers: opts.method == 'get' ? {
       'X-Requested-With': 'XMLHttpRequest',
       "Accept": "application/json",
@@ -53,7 +53,7 @@ const fetch = (opts, data) => {
   }
 
   let promise = new Promise(function (resolve, reject) {
-    axios(httpDefaultOpts).then(
+    Axios(httpDefaultOpts).then(
       (res) => {
         resolve(res)
       }
