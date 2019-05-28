@@ -10,6 +10,12 @@ import store from '@/store/index'
 /** 封装的请求函数 **/
 import fetch from "@/api/index"
 
+/** Element-ui 的Vue组件 **/
+import ElementUI from 'element-ui';
+
+/** Element-ui 的样式文件 **/
+import 'element-ui/lib/theme-chalk/index.css';
+
 /* loadsh 一个函数工具库 */
 import _ from "lodash"
 

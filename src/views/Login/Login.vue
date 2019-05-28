@@ -1,7 +1,6 @@
 <template>
   <div class="Login">
     <!-- 登录界面 -->
-    
   </div>
 </template>
 
@@ -11,9 +10,6 @@ export default {
   name: "login",
   components: {},
   computed: mapState({
-    name: state => state.User.name,
-    account_number: state => state.User.account_number,
-    pass_word: state => state.User.account_number
   }),
   created() {}
 };
