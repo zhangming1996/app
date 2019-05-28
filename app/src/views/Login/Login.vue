@@ -5,13 +5,16 @@
 </template>
 
 <script>
-import { mapState, mapActions, mapMutations } from "vuex";
+
 export default {
   name: "login",
   components: {},
-  computed: mapState({
+  computed: vx.mapState({
+    name:state => state.User.name
   }),
-  created() {}
+  created() {
+    
+  }
 };
 </script>
 <style lang="scss" scoped>

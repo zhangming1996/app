@@ -1,6 +1,6 @@
 const User = {
   state: {
-
+    name:"123"
   },
   actions: {
 

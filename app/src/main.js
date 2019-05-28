@@ -7,9 +7,6 @@ import router from '@/router/index'
 /** 状态管理 **/
 import store from '@/store/index'
 
-/** 封装的请求函数 **/
-import fetch from "@/api/index"
-
 /** Element-ui 的Vue组件 **/
 import ElementUI from 'element-ui';
 
@@ -21,12 +18,29 @@ import _ from "lodash"
 
 import "@/static/css/index.scss"
 
-Vue.config.productionTip = false
+/** 封装的请求函数 **/
+import fetch from "@/api/index"
 
-Vue.prototype.$fetch = fetch
+/** 状态管理简便方法 **/
+import { mapState, mapActions, mapMutations, mapGetters } from "vuex";
 
-new Vue({
+let vx = Object.create(null)
+
+vx = Object.assign({},{ 
+  mapState, mapActions, mapMutations, mapGetters
+})
+
+Vue.prototype.$fetch       = fetch
+
+Vue.config.productionTip   = false
+
+const vm = new Vue({
   router,
   store,
   render: h => h(App)
 }).$mount('#app')
+
+// vuex工具
+window["vx"] = vx
+// vue实例
+window["vm"] = vm
