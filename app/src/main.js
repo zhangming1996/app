@@ -13,6 +13,9 @@ import ElementUI from 'element-ui';
 /** Element-ui 的样式文件 **/
 import 'element-ui/lib/theme-chalk/index.css';
 
+/** 使用Element-ui **/
+Vue.use(ElementUI)
+
 /* loadsh 一个函数工具库 */
 import _ from "lodash"
 
