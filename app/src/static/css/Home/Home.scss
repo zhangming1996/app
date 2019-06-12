@@ -1,7 +1,10 @@
 .home {
   height: 100%;
-  background: #f9f9f9;
-  overflow: auto;
+  background: #fff;
+  overflow: hidden;
   position: relative;
   word-wrap:break-word;
+  .text-view {
+    width: 94%;
+  }
 }
