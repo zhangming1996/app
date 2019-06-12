@@ -10,6 +10,7 @@
     "axios": "^0.18.0",
     "core-js": "^2.6.5",
     "element-ui": "^2.8.2",
+    "html2canvas": "^1.0.0-rc.3",
     "lodash": "^4.17.11",
     "vue": "^2.6.10",
     "vue-router": "^3.0.3",
